@@ -1,6 +1,6 @@
-# English translation patch for _Yurucamp: Have a nice day!_
+# Indonesia translation patch for _Yurucamp: Have a nice day!_
 
-Here it is: the long-awaited(?) English fan-patch for the _Yurucamp: Have a nice day!_ visual novel.
+Here it is: the long-awaited(?) Indonesia fan-patch for the _Yurucamp: Have a nice day!_ visual novel.
 
 ## DISCLAIMER
 
@@ -44,6 +44,13 @@ Simply run the following command, and a modified `scrpt.cpk` will be produced:
 ```pwsh
 # On Windows
 .\repack_scrpt.cpk.ps1
+```
+  
+```sh
+# On Android with Termux
+git clone https://github.com/StevenBeach33/YC_Indonesia/
+cd YC_Indonesia
+bash repack_scrpt_android.cpk.sh
 ```
 </details>
 
@@ -99,6 +106,7 @@ _(of course, if you were to look for it, I'm sure someone out there will end up 
 
 ## Special thanks
 
+- [@Thesola10](https://github.com/Thesola10) for English translation
 - [@SciresM](https://github.com/SciresM) for `hactool`, without which none of this would have been possible
 - Joseph John and the [UnityPy](https://github.com/K0lb3/UnityPy) contributors
 - MAGES for the game
