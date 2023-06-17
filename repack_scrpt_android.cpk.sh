@@ -14,4 +14,4 @@ wine $DIR/3rdparty/cpkmakec.exe \
         -code=UTF-8                                 \
         -align=2048
 
-rm -rf $DIR/work/Data/StreamingAssets/scrpt.cpk.contents
+
