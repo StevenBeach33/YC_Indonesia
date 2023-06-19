@@ -33,6 +33,7 @@ To build the game translation package, you will need:
 - Python 3 (for `inucode.py`)
 - Wine (for `cpkmakec.exe` on Linux)
 - .NET Framework 3.5 (for `cpkmakec.exe` on Windows)
+- Termux with proot ubuntu & box64 installed (on Android)
   
 Simply run the following command, and a modified `scrpt.cpk` will be produced:
 
@@ -78,6 +79,11 @@ To build the menu translation patch, you will need:
 .\extract_nsp.ps1 path\to\your\yurucamp\rom.nsp
 ```
 
+```sh
+# On Android w/ Termux
+bash extract_nsp.sh path/to/your/yurucamp/rom.nsp
+```
+
 #### Patching game files
 
 ```sh
@@ -89,6 +95,12 @@ To build the menu translation patch, you will need:
 # On Windows
 python3 .\monobehaviour_of_borg.py
 ```
+
+```sh
+# On Android w/ Termux
+python monobehaviour_of_borg.py
+```
+
 </details>
 
 ## How do I install and use all that?
@@ -106,7 +118,6 @@ _(of course, if you were to look for it, I'm sure someone out there will end up 
 
 ## Special thanks
 
-- [@Brolijah](https://github.com/Brolijah) for YACpkTool
 - [@Thesola10](https://github.com/Thesola10) for English translation
 - [@SciresM](https://github.com/SciresM) for `hactool`, without which none of this would have been possible
 - Joseph John and the [UnityPy](https://github.com/K0lb3/UnityPy) contributors
