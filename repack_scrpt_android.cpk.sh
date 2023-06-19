@@ -15,3 +15,4 @@ box64 wine $DIR/3rdparty/cpkmakec.exe \
         -align=2048
 
 
+rm -rf $DIR/work/Data/StreamingAssets/scrpt.cpk.contents
