@@ -2,6 +2,8 @@
 
 Here it is: the long-awaited(?) Indonesia fan-patch for the _Yurucamp: Have a nice day!_ visual novel.
 
+# Progress : 5/100
+
 ## DISCLAIMER
 
 > After applying this patch, you will be running a **modified** version of the game. Neither Nintendo nor
