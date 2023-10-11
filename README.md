@@ -27,9 +27,7 @@ Script yang diberikan di repo ini tersedia untuk Linux/UNIX, Windows, dan Androi
 <details>
 <summary>Instruksi</summary>
 Patch ini adalah untuk menerjemahkan seluruh dialog didalam game. Menu dan UI tidak akan diterjemahkan.
-<details>
 
-<details>
 <summary>Linux</summary>
 Bahan yang dibutuhkan :
 - Python 3 (untuk `inucode.py`)
@@ -41,9 +39,6 @@ Lalu jalankan perintah dibawah ini, dan file `scrpt.cpk` yang dimodifikasi akan 
 ./repack_scrpt.cpk.sh
 ```
   
-<details>
-
-<details>
 <summary>Windows</summary>
 Bahan yang dibutuhkan :
 - Python 3 (untuk `inucode.py`)
@@ -55,9 +50,6 @@ Lalu jalankan perintah dibawah ini, dan file `scrpt.cpk` yang dimodifikasi akan 
 .\repack_scrpt.cpk.ps1
 ```
   
-<details>
-
-<details>
 <summary>Android</summary>
 Bahan yang dibutuhkan :
 - Termux
