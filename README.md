@@ -42,6 +42,7 @@ Lalu jalankan perintah dibawah ini, dan file `scrpt.cpk` yang dimodifikasi akan 
 ```
   
 <details>
+
 <details>
 <summary>Windows</summary>
 Bahan yang dibutuhkan :
@@ -55,6 +56,7 @@ Lalu jalankan perintah dibawah ini, dan file `scrpt.cpk` yang dimodifikasi akan 
 ```
   
 <details>
+
 <details>
 <summary>Android</summary>
 Bahan yang dibutuhkan :
