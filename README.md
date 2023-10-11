@@ -2,6 +2,8 @@
 
 Ini dia yang kalian tunggu-tunggu, Patch Indonesia untuk game visual novel _Yurucamp: Have a nice day!_.
 
+##Patch ini belum selesai dikerjakan
+
 ## DISCLAIMER
 
 > Setelah kalian memasang patch ini, kalian akan menjalankan versi **modifikasi** dari game ini.
@@ -27,34 +29,47 @@ Script yang diberikan di repo ini tersedia untuk Linux/UNIX, Windows, dan Androi
 Patch ini adalah untuk menerjemahkan seluruh dialog didalam game. Menu dan UI tidak akan diterjemahkan.
 <details>
 
-<summary>Windows</summary>
-To build the game translation package, you will need:
-- Python 3 (for `inucode.py`)
-- Wine (for `cpkmakec.exe` on Linux)
-- .NET Framework 3.5 (for `cpkmakec.exe` on Windows)
-- Termux with proot ubuntu & box64 installed (on Android)
+<details>
+<summary>Linux</summary>
+Bahan yang dibutuhkan :
+- Python 3 (untuk `inucode.py`)
+- Wine (untuk `cpkmakec.exe`)
   
-Simply run the following command, and a modified `scrpt.cpk` will be produced:
+Lalu jalankan perintah dibawah ini, dan file `scrpt.cpk` yang dimodifikasi akan dibuat:
 
 ```sh
-# On Linux
 ./repack_scrpt.cpk.sh
 ```
   
+<details>
+<details>
+<summary>Windows</summary>
+Bahan yang dibutuhkan :
+- Python 3 (untuk `inucode.py`)
+- .NET Framework 3.5 (untuk `cpkmakec.exe` on Windows)
+
+Lalu jalankan perintah dibawah ini, dan file `scrpt.cpk` yang dimodifikasi akan dibuat:
+
 ```pwsh
-# On Windows
 .\repack_scrpt.cpk.ps1
 ```
   
+<details>
+<details>
+<summary>Android</summary>
+Bahan yang dibutuhkan :
+- Termux
+- Koneksi internet
+- Ruang tersedia ±3gb pada perangkat
+
+Lalu jalankan perintah dibawah ini, dan file `scrpt.cpk` yang dimodifikasi akan dibuat:
+
 ```sh
-# On Android with Termux
-git clone https://github.com/StevenBeach33/YC_Indonesia/
-cd YC_Indonesia
-bash repack_scrpt_android.cpk.sh
+????
 ```
 </details>
 
-### Menus (Requires original game files)
+### Menu dan UI (Memutuhkan file game original)
 <details>
 <summary>Instructions</summary>
 This represents translations for the user interface components, basically everything that isn't directly
@@ -102,22 +117,22 @@ python monobehaviour_of_borg.py
 
 </details>
 
-## How do I install and use all that?
+## Bagaimana saya menggunakan patch tersebut?
 
-Once you have completed at least one of the patches above, copy the entire contents of the `out`
-directory to the `atmosphere` or `sxos` directory in your Switch's SD card, and the next time you
-boot up the game, the translations should apply.
+Setelah kalian menyelesaikan setidaknya 1 patch diatas, salin isi dari dalam folder `out`
+kedalam folde `atmosphere` atau `sxos` pada SDCard Switch-mu, dan ketika kamu
+menjalankan game, terjemahan seharusnya sudah terpasang.
 
-I apologize if the instructions seem a bit messy, I tried automating and streamlining the patching
-process as much as I could without sharing copyrighted data.
-
-
-_(of course, if you were to look for it, I'm sure someone out there will end up redistributing pre-patched files, but that's illegal so I can't condone this.)_
+Saya meminta maaf apabila instruksinya agak sulit dimengerti, saya mencoba untuk membuat proses patch menjadi otomatis
+sebisa mungkin tanpa membagikan data copyright.
 
 
-## Special thanks
+_(tentunya, jika kalian mencarinya, saya yakin pasti ada seseorang diluar sana yang membagikan berkas asli, tapi itu ilegal dan saya tidak bisa memaafkan itu.)_
 
-- [@Thesola10](https://github.com/Thesola10) for English translation
-- [@SciresM](https://github.com/SciresM) for `hactool`, without which none of this would have been possible
-- Joseph John and the [UnityPy](https://github.com/K0lb3/UnityPy) contributors
-- MAGES for the game
+
+## Terina kasih kepada
+
+- [@Thesola10](https://github.com/Thesola10) untuk terjemahan bahasa inggris
+- [@SciresM](https://github.com/SciresM) untuk `hactool`, tanpanya patch ini tidak mungkin ada
+- Joseph John dan para kontributos [UnityPy](https://github.com/K0lb3/UnityPy)
+- MAGES untuk gamenya
