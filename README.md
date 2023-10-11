@@ -1,36 +1,33 @@
-# Indonesia translation patch for _Yurucamp: Have a nice day!_
+# Patch Indonesia untuk _Yurucamp: Have a nice day!_
 
-Here it is: the long-awaited(?) Indonesia fan-patch for the _Yurucamp: Have a nice day!_ visual novel.
-
-# Progress : 5/100
+Ini dia yang kalian tunggu-tunggu, Patch Indonesia untuk game visual novel _Yurucamp: Have a nice day!_.
 
 ## DISCLAIMER
 
-> After applying this patch, you will be running a **modified** version of the game. Neither Nintendo nor
-> the game developers will be of any help, and I will not accept responsibility for eventual crashes,
-> loss of save files, or sudden urge to go camping.
+> Setelah kalian memasang patch ini, kalian akan menjalankan versi **modifikasi** dari game ini.
+> Pihak Nintendo dan developer tidak akan membantu, saya pun tidak akan bertanggungjawab jika terdapat crash,
+> kehilangan file save, atau tiba-tiba kalian jadi ingin pergi berkemah.
 >
-> This is a fan-made project, provided as-is with **absolutely no guarantee of quality, fitness for a particular purpose, or even working at all.**
-> Bug reports and translation fixes are welcome though.
+> Ini adalah projek fanmade, yang dimana **saya tidak menjamin kualitas, kuantitas, atau fungsinya.**
+> Saya terbuka dengan report bug dan memperbaiki terjemahan, silahkan buka issues dan berikan deskripsi, foto/video, serta savedata.
 >
-> The entire patching process can be carried out **entirely using legally-obtained data**.
+> Seluruh proses patching dapat dilakukan **sepenuhnya menggunakan data yang diperoleh secara legal**.
 
-## DISCLAIMER (again)
+## DISCLAIMER (lagi)
 
-The initial batch of translations was run through Google Translate. Character names have been
-translated by hand wherever possible, but this is far from the best translation it could be.
-If you want to take up the task of translating by hand, be my guest. The source files have been
-formatted for this purpose. (You don't need to do _everything_ to file a pull request)
+Terjemahan ini sebagain besar menggunakan edit file manual, dan mungkin ada beberapa terjemahan yang kurang cocok karena sebagian menggunakan Google Translate.
 
-## Okay, how do I patch?
+## Baiklah, bagaimana saya membuat patchnya?
 
-The scripts provided in this repository exist in both Linux/UNIX and Windows versions.
+Script yang diberikan di repo ini tersedia untuk Linux/UNIX, Windows, dan Android w/ Termux.
 
-### Dialogue
+### Dialog
 <details>
-<summary>Instructions</summary>
-This represents translations for the actual visual novel. Menus and certain UI elements will not be translated.
+<summary>Instruksi</summary>
+Patch ini adalah untuk menerjemahkan seluruh dialog didalam game. Menu dan UI tidak akan diterjemahkan.
+<details>
 
+<summary>Windows</summary>
 To build the game translation package, you will need:
 - Python 3 (for `inucode.py`)
 - Wine (for `cpkmakec.exe` on Linux)
