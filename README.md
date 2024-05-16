@@ -55,15 +55,10 @@ Lalu jalankan perintah dibawah ini, dan file `scrpt.cpk` yang dimodifikasi akan 
 >Android
 
 Bahan yang dibutuhkan :
-- Termux
-- Koneksi internet
-- Ruang tersedia ±3gb pada perangkat
+- Akun Google
 
-Lalu jalankan perintah dibawah ini, dan file `scrpt.cpk` yang dimodifikasi akan dibuat:
-
-```sh
-????
-```
+Buka link ini, lalu jalankan semua runtime-nya
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1n3hxoRUHr3ZFoaFxSr1X8se9ooUC2Ex3)
 </details>
 
 ### Menu dan UI (Memutuhkan file game original)
