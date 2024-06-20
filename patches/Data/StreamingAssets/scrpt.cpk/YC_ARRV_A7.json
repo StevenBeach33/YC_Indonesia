@@ -3,47 +3,48 @@
     "BGM_03"
   ],
   "bgp": [
-    "BG_094_A0",
-    "BG_096_A0",
-    "BG_097_A0",
+    "BG_136_A0",
     "BG_189_A0"
   ],
   "egp": [],
   "cid": [
     "AOI",
     "CHI",
-    "MIN",
     "NAD",
     "RIN"
   ],
   "label": [
     {
-      "name": "SCR_L_YC_ARRV_A0_START",
+      "name": "SCR_L_YC_ARRV_A7_START",
       "line": 0
     },
     {
-      "name": "SCR_L_YC_ARRV_A0_GP1_GP3",
+      "name": "SCR_L_YC_ARRV_A7_GP1",
       "line": 7
     },
     {
-      "name": "SCR_L_YC_ARRV_A0_GP1",
-      "line": 53
+      "name": "SCR_L_YC_ARRV_A7_GP2",
+      "line": 44
     },
     {
-      "name": "SCR_L_YC_ARRV_A0_GP2",
-      "line": 55
+      "name": "SCR_L_YC_ARRV_A7_GP3",
+      "line": 78
     },
     {
-      "name": "SCR_L_YC_ARRV_A0_END",
-      "line": 113
+      "name": "SCR_L_YC_ARRV_A7_NOTICE",
+      "line": 96
     },
     {
-      "name": "SCR_L_YC_ARRV_A0_GP3",
-      "line": 129
+      "name": "SCR_L_YC_ARRV_A7_GP1_GP2_END",
+      "line": 116
     },
     {
-      "name": "SCR_L_YC_ARRV_A0_ALLEND",
-      "line": 131
+      "name": "SCR_L_YC_ARRV_A7_GP3_END",
+      "line": 137
+    },
+    {
+      "name": "SCR_L_YC_ARRV_A7_ALLEND",
+      "line": 160
     }
   ],
   "message": [
@@ -82,7 +83,7 @@
     {
       "function": "XPLACEENTRY",
       "argument": [
-        "0"
+        "7"
       ],
       "name": "",
       "msgidx": -1,
@@ -95,7 +96,7 @@
       "function": "XAGBRANCH",
       "argument": [
         "1",
-        "SCR_L_YC_ARRV_A0_GP1_GP3"
+        "SCR_L_YC_ARRV_A7_GP1"
       ],
       "name": "",
       "msgidx": -1,
@@ -108,7 +109,7 @@
       "function": "XAGBRANCH",
       "argument": [
         "2",
-        "SCR_L_YC_ARRV_A0_GP2"
+        "SCR_L_YC_ARRV_A7_GP2"
       ],
       "name": "",
       "msgidx": -1,
@@ -121,7 +122,7 @@
       "function": "XAGBRANCH",
       "argument": [
         "3",
-        "SCR_L_YC_ARRV_A0_GP1_GP3"
+        "SCR_L_YC_ARRV_A7_GP3"
       ],
       "name": "",
       "msgidx": -1,
@@ -141,22 +142,6 @@
       "said": ""
     },
     {
-      "function": "XIF",
-      "argument": [
-        "0",
-        "C_WEEK",
-        "C_EQU",
-        "0",
-        "C_END"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
       "function": "XFADE",
       "argument": [
         "XFTS,MaskTexture.None,0",
@@ -205,7 +190,7 @@
     {
       "function": "XLCYDRAW",
       "argument": [
-        "XLCYLOAD,Lucy.Type.BACK,BG_097_A0",
+        "XLCYLOAD,Lucy.Type.BACK,BG_189_A0",
         "XLCYFADE,0,0.001"
       ],
       "name": "",
@@ -218,11 +203,14 @@
     {
       "function": "XLCYDRAW",
       "argument": [
+        "XLCYINIT",
         "XLCYFIND,FindType.SP_C",
         "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
         "XLCYLOAD,Lucy.Type.SP_L,SP_OFF",
         "XLCYLOAD,Lucy.Type.SP_R,SP_OFF",
-        "XLCYLOAD,Lucy.Type.SP_C,SP_RIN_CMP1_2_BCK",
+        "XLCYLOAD,Lucy.Type.SP_C,SP_OFF",
+        "XLCYLOAD,Lucy.Type.MG_0,MG_OFF",
+        "XLCYLOAD,Lucy.Type.MG_1,MG_OFF",
         "XLCYFADE,0,0.25"
       ],
       "name": "",
@@ -272,154 +260,6 @@
       "argument": [
         "XFTS,MaskTexture.None,0",
         "XFIN,0.5"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XELSE",
-      "argument": [
-        "0"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XFADE",
-      "argument": [
-        "XFTS,MaskTexture.None,0",
-        "XFOT,0.5"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XWXB",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "SNSE",
-      "argument": [
-        "NSE_OFF",
-        "0"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XWXB",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XLCYDRAW",
-      "argument": [
-        "XLCYLOAD,Lucy.Type.BACK,BG_094_A0",
-        "XLCYFADE,0,0.001"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XLCYDRAW",
-      "argument": [
-        "XLCYFIND,FindType.SP_C",
-        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
-        "XLCYLOAD,Lucy.Type.SP_L,SP_OFF",
-        "XLCYLOAD,Lucy.Type.SP_R,SP_OFF",
-        "XLCYLOAD,Lucy.Type.SP_C,SP_RIN_CMP1_2_BCK",
-        "XLCYFADE,0,0.25"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "SBGM",
-      "argument": [
-        "BGM_03"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "SESE",
-      "argument": [
-        "ESE_OFF",
-        "0"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XMON",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XFADE",
-      "argument": [
-        "XFTS,MaskTexture.None,0",
-        "XFIN,0.5"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XENDIF",
-      "argument": [
-        "0"
       ],
       "name": "",
       "msgidx": -1,
@@ -431,12 +271,12 @@
     {
       "function": "XMESS",
       "argument": [
-        "Saya mau disini sampai besok"
+        "Dah sampaaaiiii!"
       ],
-      "name": "Shima Rin",
+      "name": "Kagamihara Nadeshiko",
       "msgidx": 0,
-      "voice": "RIN_0132_0001",
-      "vid": "VID_RIN",
+      "voice": "NAD_0445_0001",
+      "vid": "VID_NAD",
       "value": "",
       "said": ""
     },
@@ -453,13 +293,13 @@
     {
       "function": "XMESS",
       "argument": [
-        "Kalau begitu, silahkan tulis nama dan",
-        "info kontak anda disini."
+        "Rin-chan, Maaf ya, tapi",
+        "Tolong jaga si bloon ini ya."
       ],
-      "name": "Pengelola Perkemahan（Danau Motosu）",
+      "name": "Kagamihara Sakura",
       "msgidx": 1,
-      "voice": "M08_0000_0002",
-      "vid": "VID_M08",
+      "voice": "SAK_0126_0002",
+      "vid": "VID_SAK",
       "value": "",
       "said": ""
     },
@@ -474,62 +314,13 @@
       "said": ""
     },
     {
-      "function": "SNSE",
-      "argument": [
-        "NSE_028",
-        "0"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XWTM",
-      "argument": [
-        "0.066"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XWXB",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XLCYDRAW",
-      "argument": [
-        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
-        "XLCYLOAD,Lucy.Type.AUTO,SP_RIN_CMP1_2_BCK",
-        "XLCYFADE,0,0.25"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
       "function": "XMESS",
       "argument": [
-        "Sudah selesai..."
+        "Akan kulakukan sebisa mungkin."
       ],
       "name": "Shima Rin",
       "msgidx": 2,
-      "voice": "RIN_0133_0003",
+      "voice": "RIN_0183_0003",
       "vid": "VID_RIN",
       "value": "",
       "said": ""
@@ -537,193 +328,6 @@
     {
       "function": "XWCR",
       "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XMESS",
-      "argument": [
-        "Baik, Terima kasih banyak."
-      ],
-      "name": "Pengelola Perkemahan（Danau Motosu）",
-      "msgidx": 3,
-      "voice": "M08_0001_0004",
-      "vid": "VID_M08",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XWCR",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XMESS",
-      "argument": [
-        "Check-outnya besok jam 10 pagi. Semua kayu",
-        "bakar yang anda temukan di hutan bebas dipakai."
-      ],
-      "name": "Pengelola Perkemahan（Danau Motosu）",
-      "msgidx": 4,
-      "voice": "M08_0002_0005",
-      "vid": "VID_M08",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XWCR",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XLCYDRAW",
-      "argument": [
-        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
-        "XLCYLOAD,Lucy.Type.AUTO,SP_RIN_CMP1_2_BCK",
-        "XLCYFADE,0,0.25"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XMESS",
-      "argument": [
-        "Baik."
-      ],
-      "name": "Shima Rin",
-      "msgidx": 5,
-      "voice": "RIN_0134_0006",
-      "vid": "VID_RIN",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XWCR",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XAGBRANCH",
-      "argument": [
-        "1",
-        "SCR_L_YC_ARRV_A0_GP1"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XAGBRANCH",
-      "argument": [
-        "3",
-        "SCR_L_YC_ARRV_A0_GP3"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XFADE",
-      "argument": [
-        "XFED,0.5"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XCLR",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XEOS",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XCLR",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "GON",
-      "argument": [
-        "SCR_L_YC_ARRV_A0_END"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XCLR",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XIF",
-      "argument": [
-        "0",
-        "C_WEEK",
-        "C_EQU",
-        "0",
-        "C_END"
-      ],
       "name": "",
       "msgidx": -1,
       "voice": "",
@@ -780,7 +384,7 @@
     {
       "function": "XLCYDRAW",
       "argument": [
-        "XLCYLOAD,Lucy.Type.BACK,BG_097_A0",
+        "XLCYLOAD,Lucy.Type.BACK,BG_136_A0",
         "XLCYFADE,0,0.001"
       ],
       "name": "",
@@ -797,324 +401,7 @@
         "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
         "XLCYLOAD,Lucy.Type.SP_L,SP_OFF",
         "XLCYLOAD,Lucy.Type.SP_R,SP_OFF",
-        "XLCYLOAD,Lucy.Type.SP_C,SP_CHI_CMP_2_BCK",
-        "XLCYFADE,0,0.25"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "SBGM",
-      "argument": [
-        "BGM_03"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "SESE",
-      "argument": [
-        "ESE_OFF",
-        "0"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XMON",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XFADE",
-      "argument": [
-        "XFTS,MaskTexture.None,0",
-        "XFIN,0.5"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XELSE",
-      "argument": [
-        "0"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XFADE",
-      "argument": [
-        "XFTS,MaskTexture.None,0",
-        "XFOT,0.5"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XWXB",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "SNSE",
-      "argument": [
-        "NSE_OFF",
-        "0"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XWXB",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XLCYDRAW",
-      "argument": [
-        "XLCYLOAD,Lucy.Type.BACK,BG_094_A0",
-        "XLCYFADE,0,0.001"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XLCYDRAW",
-      "argument": [
-        "XLCYFIND,FindType.SP_C",
-        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
-        "XLCYLOAD,Lucy.Type.SP_L,SP_OFF",
-        "XLCYLOAD,Lucy.Type.SP_R,SP_OFF",
-        "XLCYLOAD,Lucy.Type.SP_C,SP_CHI_CMP_2_BCK",
-        "XLCYFADE,0,0.25"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "SBGM",
-      "argument": [
-        "BGM_03"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "SESE",
-      "argument": [
-        "ESE_OFF",
-        "0"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XMON",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XFADE",
-      "argument": [
-        "XFTS,MaskTexture.None,0",
-        "XFIN,0.5"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XENDIF",
-      "argument": [
-        "0"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XMESS",
-      "argument": [
-        "Saya mau disini sampai besok."
-      ],
-      "name": "Ōgaki Chiaki",
-      "msgidx": 6,
-      "voice": "CHI_0256_0007",
-      "vid": "VID_CHI",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XWCR",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XMESS",
-      "argument": [
-        "Kalau begitu, silahkan tulis nama dan",
-        "info kontak anda disini."
-      ],
-      "name": "Pengelola Perkemahan（Danau Motosu）",
-      "msgidx": 7,
-      "voice": "M08_0003_0008",
-      "vid": "VID_M08",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XWCR",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XFADE",
-      "argument": [
-        "XFTS,MaskTexture.None,0",
-        "XFOT,0.5"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XWXB",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "SNSE",
-      "argument": [
-        "NSE_OFF",
-        "0"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XWXB",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XLCYDRAW",
-      "argument": [
-        "XLCYLOAD,Lucy.Type.BACK,BG_096_A0",
-        "XLCYFADE,0,0.001"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XLCYDRAW",
-      "argument": [
-        "XLCYFIND,FindType.SP_L|FindType.SP_R",
-        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
-        "XLCYLOAD,Lucy.Type.SP_L,SP_NAD_CMP_0_SML",
-        "XLCYLOAD,Lucy.Type.SP_R,SP_AOI_CMP_0_NML",
-        "XLCYLOAD,Lucy.Type.SP_C,SP_OFF",
+        "XLCYLOAD,Lucy.Type.SP_C,SP_RIN_CMP2_0_NML",
         "XLCYFADE,0,0.25"
       ],
       "name": "",
@@ -1173,15 +460,65 @@
       "said": ""
     },
     {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
+        "XLCYLOAD,Lucy.Type.AUTO,SP_RIN_CMP2_0_NML",
+        "XLCYFADE,0,0.25"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
       "function": "XMESS",
       "argument": [
-        "Bukannya sudah saatnya",
-        "dia selesai?"
+        "Kalau begitu....."
       ],
-      "name": "Inuyama Aoi",
-      "msgidx": 8,
-      "voice": "AOI_0256_0009",
-      "vid": "VID_AOI",
+      "name": "Shima Rin",
+      "msgidx": 3,
+      "voice": "RIN_0184_0004",
+      "vid": "VID_RIN",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWCR",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
+        "XLCYLOAD,Lucy.Type.AUTO,SP_RIN_CMP2_0_NML",
+        "XLCYFADE,0,0.25"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XMESS",
+      "argument": [
+        "Pertama-tama ayo kita pergi ke Gedung Administrasi",
+        "dulu untuk mengurus check-in kita."
+      ],
+      "name": "Shima Rin",
+      "msgidx": 4,
+      "voice": "RIN_0185_0005",
+      "vid": "VID_RIN",
       "value": "",
       "said": ""
     },
@@ -1212,191 +549,12 @@
     {
       "function": "XMESS",
       "argument": [
-        "Ya, Mungkin"
+        "Oke!"
       ],
       "name": "Kagamihara Nadeshiko",
-      "msgidx": 9,
-      "voice": "NAD_0419_0010",
+      "msgidx": 5,
+      "voice": "NAD_0446_0006",
       "vid": "VID_NAD",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XWCR",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XCUTINSET",
-      "argument": [
-        "R1",
-        "2",
-        "CHI_NML",
-        "0",
-        "0",
-        "-1",
-        "NONE",
-        "T_OFF",
-        "A_NON",
-        "CutinActive.V_ON"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XCUTINDRAW",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XMESS",
-      "argument": [
-        "OOOOIIIIII."
-      ],
-      "name": "Ōgaki Chiaki",
-      "msgidx": 10,
-      "voice": "CHI_0257_0011",
-      "vid": "VID_CHI",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XWCR",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XCUTINCLEAR",
-      "argument": [
-        "4"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XLCYDRAW",
-      "argument": [
-        "XLCYFIND,FindType.SP_C",
-        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
-        "XLCYLOAD,Lucy.Type.SP_L,SP_OFF",
-        "XLCYLOAD,Lucy.Type.SP_R,SP_OFF",
-        "XLCYLOAD,Lucy.Type.SP_C,SP_MIN_CMM_0_LAU",
-        "XLCYFADE,0,0.25"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XMESS",
-      "argument": [
-        "Ah, sepertinya sudah selesai ya."
-      ],
-      "name": "Saitō Ena",
-      "msgidx": 11,
-      "voice": "MIN_0175_0012",
-      "vid": "VID_MIN",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XWCR",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XLCYDRAW",
-      "argument": [
-        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
-        "XLCYLOAD,Lucy.Type.AUTO,SP_CHI_CMP_0_LAU",
-        "XLCYFADE,0,0.25"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XMESS",
-      "argument": [
-        "Yo~ Maaf menunggu wahai kalian!",
-        "Check-outnya besok jam 10 pagi."
-      ],
-      "name": "Ōgaki Chiaki",
-      "msgidx": 12,
-      "voice": "CHI_0258_0013",
-      "vid": "VID_CHI",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XWCR",
-      "argument": [],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XLCYDRAW",
-      "argument": [
-        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
-        "XLCYLOAD,Lucy.Type.AUTO,SP_CHI_CMP_0_SML",
-        "XLCYFADE,0,0.25"
-      ],
-      "name": "",
-      "msgidx": -1,
-      "voice": "",
-      "vid": "",
-      "value": "",
-      "said": ""
-    },
-    {
-      "function": "XMESS",
-      "argument": [
-        "Katanya, semua kayu bakar yang ditemukan",
-        "di hutan bebas dipakai.",
-        "Yah, Seperti biasa."
-      ],
-      "name": "Ōgaki Chiaki",
-      "msgidx": 13,
-      "voice": "CHI_0259_0014",
-      "vid": "VID_CHI",
       "value": "",
       "said": ""
     },
@@ -1413,7 +571,649 @@
     {
       "function": "GON",
       "argument": [
-        "SCR_L_YC_ARRV_A0_END"
+        "SCR_L_YC_ARRV_A7_NOTICE"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XCLR",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XFADE",
+      "argument": [
+        "XFTS,MaskTexture.None,0",
+        "XFOT,0.5"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWXB",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "SNSE",
+      "argument": [
+        "NSE_OFF",
+        "0"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWXB",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYLOAD,Lucy.Type.BACK,BG_136_A0",
+        "XLCYFADE,0,0.001"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYFIND,FindType.SP_C",
+        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
+        "XLCYLOAD,Lucy.Type.SP_L,SP_OFF",
+        "XLCYLOAD,Lucy.Type.SP_R,SP_OFF",
+        "XLCYLOAD,Lucy.Type.SP_C,SP_RIN_CMP2_0_NML",
+        "XLCYFADE,0,0.25"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "SBGM",
+      "argument": [
+        "BGM_03"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "SESE",
+      "argument": [
+        "ESE_OFF",
+        "0"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XMON",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XFADE",
+      "argument": [
+        "XFTS,MaskTexture.None,0",
+        "XFIN,0.5"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
+        "XLCYLOAD,Lucy.Type.AUTO,SP_RIN_CMP2_0_NML",
+        "XLCYFADE,0,0.25"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XMESS",
+      "argument": [
+        "Disinilah Gedung Administrasi untuk area tenda.",
+        "Aku pergi mengurus check-in dulu."
+      ],
+      "name": "Shima Rin",
+      "msgidx": 6,
+      "voice": "RIN_0186_0007",
+      "vid": "VID_RIN",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWCR",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
+        "XLCYLOAD,Lucy.Type.AUTO,SP_CHI_CMP_0_NML",
+        "XLCYFADE,0,0.25"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XMESS",
+      "argument": [
+        "Bagaimana kalau kita ikut juga?"
+      ],
+      "name": "Ōgaki Chiaki",
+      "msgidx": 7,
+      "voice": "CHI_0275_0008",
+      "vid": "VID_CHI",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWCR",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
+        "XLCYLOAD,Lucy.Type.AUTO,SP_RIN_CMP2_0_NML",
+        "XLCYFADE,0,0.25"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XMESS",
+      "argument": [
+        "Gausah, Aku sendiri sa――"
+      ],
+      "name": "Shima Rin",
+      "msgidx": 8,
+      "voice": "RIN_0187_0009",
+      "vid": "VID_RIN",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWCR",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYFIND,FindType.SP_L|FindType.SP_R",
+        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
+        "XLCYLOAD,Lucy.Type.SP_L,SP_RIN_CMP2_0_SUP",
+        "XLCYLOAD,Lucy.Type.SP_R,SP_NAD_CPB_0_SML",
+        "XLCYLOAD,Lucy.Type.SP_C,SP_OFF",
+        "XLCYFADE,0,0.25"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
+        "XLCYLOAD,Lucy.Type.AUTO,SP_NAD_CPB_0_SML",
+        "XLCYFADE,0,0.25"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XMESS",
+      "argument": [
+        "Ah, Aku juga ikut!",
+        "Yang lain tunggu disini saja ya."
+      ],
+      "name": "Kagamihara Nadeshiko",
+      "msgidx": 9,
+      "voice": "NAD_0447_0010",
+      "vid": "VID_NAD",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWCR",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYFIND,FindType.SP_L|FindType.SP_R",
+        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
+        "XLCYLOAD,Lucy.Type.SP_L,SP_AOI_CMP_0_SML",
+        "XLCYLOAD,Lucy.Type.SP_C,SP_OFF",
+        "XLCYFADE,0,0.25"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XMESS",
+      "argument": [
+        "Begitu kah?",
+        "Yasudah kalau begitu."
+      ],
+      "name": "Inuyama Aoi",
+      "msgidx": 10,
+      "voice": "AOI_0268_0011",
+      "vid": "VID_AOI",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWCR",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYFIND,FindType.SP_C",
+        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
+        "XLCYLOAD,Lucy.Type.SP_L,SP_OFF",
+        "XLCYLOAD,Lucy.Type.SP_R,SP_OFF",
+        "XLCYLOAD,Lucy.Type.SP_C,SP_NAD_CPB_0_SML",
+        "XLCYFADE,0,0.25"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XMESS",
+      "argument": [
+        "Kalau begitu, Rin-chan.",
+        "Ayo kita selesaikan urusan kita didalam."
+      ],
+      "name": "Kagamihara Nadeshiko",
+      "msgidx": 11,
+      "voice": "NAD_0448_0012",
+      "vid": "VID_NAD",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWCR",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
+        "XLCYLOAD,Lucy.Type.AUTO,SP_RIN_CMP2_0_NML",
+        "XLCYFADE,0,0.25"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XMESS",
+      "argument": [
+        "Ah, Oke."
+      ],
+      "name": "Shima Rin",
+      "msgidx": 12,
+      "voice": "RIN_0188_0013",
+      "vid": "VID_RIN",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWCR",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "GON",
+      "argument": [
+        "SCR_L_YC_ARRV_A7_NOTICE"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XCLR",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XFADE",
+      "argument": [
+        "XFTS,MaskTexture.None,0",
+        "XFOT,0.5"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWXB",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "SNSE",
+      "argument": [
+        "NSE_OFF",
+        "0"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWXB",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYLOAD,Lucy.Type.BACK,BG_136_A0",
+        "XLCYFADE,0,0.001"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYFIND,FindType.SP_C",
+        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
+        "XLCYLOAD,Lucy.Type.SP_L,SP_OFF",
+        "XLCYLOAD,Lucy.Type.SP_R,SP_OFF",
+        "XLCYLOAD,Lucy.Type.SP_C,SP_RIN_CMP2_2_BCK",
+        "XLCYFADE,0,0.25"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "SBGM",
+      "argument": [
+        "BGM_03"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "SESE",
+      "argument": [
+        "ESE_OFF",
+        "0"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XMON",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XFADE",
+      "argument": [
+        "XFTS,MaskTexture.None,0",
+        "XFIN,0.5"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
+        "XLCYLOAD,Lucy.Type.AUTO,SP_RIN_CMP2_2_BCK",
+        "XLCYFADE,0,0.25"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XMESS",
+      "argument": [
+        "（Jadi inilah Gedung Administrasi area tenda ya）"
+      ],
+      "name": "Shima Rin（Non-Voiced）",
+      "msgidx": 13,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWCR",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
+        "XLCYLOAD,Lucy.Type.AUTO,SP_RIN_CMP2_2_BCK",
+        "XLCYFADE,0,0.25"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XMESS",
+      "argument": [
+        "（Pokoknya ngurusin check-in dulu lah）"
+      ],
+      "name": "Shima Rin（Non-Voiced）",
+      "msgidx": 14,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWCR",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "GON",
+      "argument": [
+        "SCR_L_YC_ARRV_A7_NOTICE"
       ],
       "name": "",
       "msgidx": -1,
@@ -1562,12 +1362,14 @@
     {
       "function": "XMESS",
       "argument": [
-        "Kalau begitu, Ayo Rin-chan!"
+        "Check-outnya besok sore, Kegiatan seperti",
+        "api unggun atau menggunakan api sebaiknya",
+        "jangan dilakukan."
       ],
-      "name": "Kagamihara Nadeshiko",
-      "msgidx": 14,
-      "voice": "NAD_0420_0015",
-      "vid": "VID_NAD",
+      "name": "Resepsionis Gedung Administrasi（Danau Tanuki）",
+      "msgidx": 15,
+      "voice": "M13_0000_0014",
+      "vid": "VID_M13",
       "value": "",
       "said": ""
     },
@@ -1584,12 +1386,14 @@
     {
       "function": "XMESS",
       "argument": [
-        "Siap."
+        "Dengan begini prosedurnya sudah selesai.",
+        "Didepan Gedung Administrasi ini ada gerobak",
+        "untuk bongkar barang bawaan. Silahkan gunakan."
       ],
-      "name": "Shima Rin",
-      "msgidx": 15,
-      "voice": "RIN_0135_0016",
-      "vid": "VID_RIN",
+      "name": "Resepsionis Gedung Administrasi（Danau Tanuki）",
+      "msgidx": 16,
+      "voice": "M13_0001_0015",
+      "vid": "VID_M13",
       "value": "",
       "said": ""
     },
@@ -1604,9 +1408,59 @@
       "said": ""
     },
     {
-      "function": "GON",
+      "function": "XMESS",
       "argument": [
-        "SCR_L_YC_ARRV_A0_ALLEND"
+        "Tanpa memandang ukuran,",
+        "Bebas digunakan secara gratis."
+      ],
+      "name": "Resepsionis Gedung Administrasi（Danau Tanuki）",
+      "msgidx": 17,
+      "voice": "M13_0002_0016",
+      "vid": "VID_M13",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWCR",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XAGBRANCH",
+      "argument": [
+        "1",
+        "SCR_L_YC_ARRV_A7_GP1_GP2_END"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XAGBRANCH",
+      "argument": [
+        "2",
+        "SCR_L_YC_ARRV_A7_GP1_GP2_END"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XAGBRANCH",
+      "argument": [
+        "3",
+        "SCR_L_YC_ARRV_A7_GP3_END"
       ],
       "name": "",
       "msgidx": -1,
@@ -1626,9 +1480,518 @@
       "said": ""
     },
     {
+      "function": "XMESS",
+      "argument": [
+        "Baik, Kami mengerti."
+      ],
+      "name": "Kagamihara Nadeshiko",
+      "msgidx": 18,
+      "voice": "NAD_0449_0017",
+      "vid": "VID_NAD",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWCR",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XAGBRANCH",
+      "argument": [
+        "1",
+        "SCR_L_YC_ARRV_A7_ALLEND"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XFADE",
+      "argument": [
+        "XFTS,MaskTexture.None,0",
+        "XFOT,0.5"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWXB",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "SNSE",
+      "argument": [
+        "NSE_OFF",
+        "0"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWXB",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYLOAD,Lucy.Type.BACK,BG_136_A0",
+        "XLCYFADE,0,0.001"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYFIND,FindType.SP_L|FindType.SP_R",
+        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
+        "XLCYLOAD,Lucy.Type.SP_L,SP_RIN_CMP2_0_NML",
+        "XLCYLOAD,Lucy.Type.SP_R,SP_NAD_CPB_0_SML",
+        "XLCYLOAD,Lucy.Type.SP_C,SP_OFF",
+        "XLCYFADE,0,0.25"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "SBGM",
+      "argument": [
+        "BGM_SAME"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "SESE",
+      "argument": [
+        "ESE_OFF",
+        "0"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XMON",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XFADE",
+      "argument": [
+        "XFTS,MaskTexture.None,0",
+        "XFIN,0.5"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
+        "XLCYLOAD,Lucy.Type.AUTO,SP_NAD_CPB_0_SML",
+        "XLCYFADE,0,0.25"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XMESS",
+      "argument": [
+        "Pertama-tama kita angkut barang bawaan dulu ya."
+      ],
+      "name": "Kagamihara Nadeshiko",
+      "msgidx": 19,
+      "voice": "NAD_0450_0018",
+      "vid": "VID_NAD",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWCR",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
+        "XLCYLOAD,Lucy.Type.AUTO,SP_RIN_CMP2_0_NML",
+        "XLCYFADE,0,0.25"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XMESS",
+      "argument": [
+        "Ui~"
+      ],
+      "name": "Shima Rin",
+      "msgidx": 20,
+      "voice": "RIN_0189_0019",
+      "vid": "VID_RIN",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWCR",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
       "function": "GON",
       "argument": [
-        "SCR_L_YC_ARRV_A0_ALLEND"
+        "SCR_L_YC_ARRV_A7_ALLEND"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XCLR",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XMESS",
+      "argument": [
+        "（Jadi begitu. Ini sih praktis banget）"
+      ],
+      "name": "Shima Rin（Non-Voiced）",
+      "msgidx": 21,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWCR",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XFADE",
+      "argument": [
+        "XFTS,MaskTexture.None,0",
+        "XFOT,0.5"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWXB",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "SNSE",
+      "argument": [
+        "NSE_OFF",
+        "0"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWXB",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYLOAD,Lucy.Type.BACK,BG_136_A0",
+        "XLCYFADE,0,0.001"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYFIND,FindType.SP_C",
+        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
+        "XLCYLOAD,Lucy.Type.SP_L,SP_OFF",
+        "XLCYLOAD,Lucy.Type.SP_R,SP_OFF",
+        "XLCYLOAD,Lucy.Type.SP_C,SP_RIN_CMP2_0_NML",
+        "XLCYFADE,0,0.25"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "SBGM",
+      "argument": [
+        "BGM_SAME"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "SESE",
+      "argument": [
+        "ESE_OFF",
+        "0"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XMON",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XFADE",
+      "argument": [
+        "XFTS,MaskTexture.None,0",
+        "XFIN,0.5"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
+        "XLCYLOAD,Lucy.Type.AUTO,SP_RIN_CMP2_0_NML",
+        "XLCYFADE,0,0.25"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XMESS",
+      "argument": [
+        "（Dilihat-lihat, didepan Gedung Administrasi",
+        "　banyak banget gerobak kayak gini）"
+      ],
+      "name": "Shima Rin（Non-Voiced）",
+      "msgidx": 22,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWCR",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
+        "XLCYLOAD,Lucy.Type.AUTO,SP_RIN_CMP2_0_NML",
+        "XLCYFADE,0,0.25"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XMESS",
+      "argument": [
+        "（Gerobak paling besar kayaknya bisa",
+        "　mengangkut banyak banget barang bawaan sih）"
+      ],
+      "name": "Shima Rin（Non-Voiced）",
+      "msgidx": 23,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWCR",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XLCYDRAW",
+      "argument": [
+        "XLCYLOAD,Lucy.Type.BUST,BU_OFF",
+        "XLCYLOAD,Lucy.Type.AUTO,SP_RIN_CMP2_0_SER",
+        "XLCYFADE,0,0.25"
+      ],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XMESS",
+      "argument": [
+        "（Tapi kalo gakuat bawanya gaguna juga）"
+      ],
+      "name": "Shima Rin（Non-Voiced）",
+      "msgidx": 24,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "XWCR",
+      "argument": [],
+      "name": "",
+      "msgidx": -1,
+      "voice": "",
+      "vid": "",
+      "value": "",
+      "said": ""
+    },
+    {
+      "function": "GON",
+      "argument": [
+        "SCR_L_YC_ARRV_A7_ALLEND"
       ],
       "name": "",
       "msgidx": -1,
