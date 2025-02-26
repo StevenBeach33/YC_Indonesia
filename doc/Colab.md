@@ -7,7 +7,7 @@
 - Keys dari konsol anda, berada pada direktori `$HOME/.switch`
 
 ### Step-by-step
-1. Buka link ini [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]()
+1. Buka link ini [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StevenBeach33/YC_Indonesia/blob/master/Colab.ipynb)
 2. Jalankan untuk menginstall segala bahan yang dibutuhkan untuk membuat patch
 ![IMG_20250226_183547](https://github.com/user-attachments/assets/ec1bd429-ab45-4411-b1e7-f91f03beb4f1)
 3. Jalankan untuk membuat file `scrpt.cpk` agar dialog menjadi berbahasa indonesia
