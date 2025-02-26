@@ -74,9 +74,8 @@ python3 .\monobehaviour_of_borg.py
 </details>
 
 ### Untuk Google Colab
-
-⚠️Dalam pengerjaan⚠️
-
+Klik ini untuk membaca 
+      <a href="doc/Colab.md">Guide</a>
 
 ## Bagaimana saya menggunakan patch tersebut?
 
