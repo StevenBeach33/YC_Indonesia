@@ -18,6 +18,37 @@ Ini dia yang kalian tunggu-tunggu, Patch Indonesia untuk game visual novel _Yuru
 Terjemahan ini sebagian besar menggunakan edit file manual, dan mungkin ada beberapa terjemahan yang kurang cocok karena sebagian menggunakan Google Translate.
 
 ## Instruksi Pembuatan Patch
+
+</details>
+
+### Untuk Windows
+<details>
+<summary>Instruksi</summary>
+  
+Bahan yang dibutuhkan :
+- Python 3 dengan UnityPy terinstall (untuk `inucode.py` dan `monobehaviour_of_borg.py`)
+- .NET Framework 3.5 (untuk `cpkmakec.exe` pada Windows)
+- [`hactool`](https://github.com/SciresM/hactool) milik SciresM untuk mengekstrak file permainan, simpan file exe kedalam folder `3rdparty`
+- Original ROM, dengan format `.nsp`
+- Keys dari konsol anda, berada pada direktori `$HOME/.switch`
+
+Lalu jalankan perintah dibawah ini, dan file `scrpt.cpk` yang dimodifikasi akan dibuat:
+
+```pwsh
+.\repack_scrpt.cpk.ps1
+```
+
+Untuk mengekstrak file permainan dan mem-patchnya, jalankan perintah ini :
+
+```pwsh
+.\extract_nsp.ps1 path\to\your\yurucamp\rom.nsp
+python3 .\monobehaviour_of_borg.py
+```
+
+</details>
+
+### Untuk Google Colab
+
 Klik ini untuk membaca 
       <a href="doc/Colab.md">Guide</a>
 
