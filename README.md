@@ -90,9 +90,16 @@ sebisa mungkin tanpa membagikan data hak cipta.
 _(tentunya, jika kalian mencarinya, saya yakin pasti ada seseorang diluar sana yang membagikan berkas asli, tapi itu ilegal dan saya tidak bisa memaafkan itu.)_
 
 
-## Terina kasih kepada
+## Terima kasih kepada
 
 - [@Thesola10](https://github.com/Thesola10) untuk terjemahan bahasa inggris
 - [@SciresM](https://github.com/SciresM) untuk `hactool`, tanpanya patch ini tidak mungkin ada
 - Joseph John dan para kontributor [UnityPy](https://github.com/K0lb3/UnityPy)
 - MAGES untuk gamenya
+
+## Donasi & Kontak
+
+- [Trakteer](https://trakteer.id/MHTranslation)
+- [Saweria](https://saweria.com/MHTranslation)
+- [YouTube](https://youtube.com/@mhtranslation)
+- [Facebook](https://facebook.com/mhtranslationofficial)
